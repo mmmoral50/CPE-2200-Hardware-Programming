@@ -1,0 +1,56 @@
+/**
+  *****************************************************************************
+  *  Math (Basic)
+  *
+  *      This program performs a basic mathematical operation using the ARM
+  *      registers as variable holders.  The calculation will be as follows:
+  *
+  *          r0 = r1 - r2 + r3 + (3 * r4)
+  *
+  *      @file      main.s
+  *      @author    Scott Tippens
+  *      @version   V1.0.0
+  *      @date      2018-08-25
+  *****************************************************************************
+  */
+
+.syntax unified
+.cpu cortex-m4
+.fpu softvfp
+.thumb
+
+.section .text
+.align
+.global main
+
+
+
+/**
+  *============================================================================
+  *  main()
+  *      @param   None
+  *      @return  None
+  *
+  *      @brief
+  *          Compute required equation and hold in infinite loop when done.
+  *          Notice how we target the operations in parenthesis first when
+  *          computing a complex math expression.
+  *============================================================================
+  */
+main:
+
+	//-- initialize variables -------------------------------------------------
+	mov   r1, #12
+	mov   r2, #3
+	mov   r3, #4
+	mov   r4, #5
+
+	//-- evaluate equation ----------------------------------------------------
+	mov   r0, #3       // r0 = 3
+	mul   r0, r0, r4   // r0 = (3 * r4)
+	add   r0, r0, r1   // r0 = (3 * r4) + r1
+	sub   r0, r0, r2   // r0 = (3 * r4) + r1 - r2
+	add   r0, r0, r3   // r0 = (3 * r4) + r1 - r2 + r3
+
+forever:
+	b     forever
