@@ -338,7 +338,7 @@ void displayBackstory() {
     printf("\n                                            ESCAPE POD INTERIOR\n");
     printf("                                 YOU WAKE UP ALONE, STRAPPED INTO THE ESCAPE POD...\n");
     printf("                             SYSTEMS ARE FAILING. OXYGEN LOW. NAVIGATION OFFLINE...\n");
-    printf("                             THE STATUS CONSOLE FLICKERS — ONE CHANCE LEFT TO SURVIVE...\n");
+    printf("                             THE STATUS CONSOLE FLICKERS Â— ONE CHANCE LEFT TO SURVIVE...\n");
     printf("                          DECIDE QUICKLY: REROUTE POWER, NAVIGATE, OR SIGNAL FOR HELP...\n");
 	printf("\n                    -----------------------------------------------------------------------------------------\n");
 }
@@ -525,7 +525,7 @@ void chooseDestination() {
 // You are given 2 attempts to decrypt the code, else you are identfied and captured
 //-----------------------------------------------------------------------------------------
 void planetPuzzle(const char* planet) {
-    char input[20];  // Buffer for player’s code input
+    char input[20];  // Buffer for playerÂ’s code input
     char confirm[10];// Buffer for upgrade confirmation input
     char planetUpper[20]; // Uppercase planet name for matching
     strcpy(planetUpper, planet);
