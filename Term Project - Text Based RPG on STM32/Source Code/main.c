@@ -334,7 +334,7 @@ void displayBackstory() {
     printf("\n                                            ESCAPE POD INTERIOR\n");
     printf("                                 YOU WAKE UP ALONE, STRAPPED INTO THE ESCAPE POD...\n");
     printf("                             SYSTEMS ARE FAILING. OXYGEN LOW. NAVIGATION OFFLINE...\n");
-    printf("                             THE STATUS CONSOLE FLICKERS — ONE CHANCE LEFT TO SURVIVE...\n");
+    printf("                             THE STATUS CONSOLE FLICKERS Â— ONE CHANCE LEFT TO SURVIVE...\n");
     printf("                          DECIDE QUICKLY: REROUTE POWER, NAVIGATE, OR SIGNAL FOR HELP...\n");
 	printf("\n                    -----------------------------------------------------------------------------------------\n");
 }
